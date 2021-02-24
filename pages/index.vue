@@ -15,8 +15,10 @@
 
 <script>
 import {request, gql} from '@/cms/datocms';
+import {pageMeta} from '@/mixins/pageMeta';
 
 export default {
+  mixins: [pageMeta],
   async asyncData() {
     const data = await request({
       query: gql`
@@ -52,7 +54,6 @@ export default {
 
 .title-container {
   width: fit-content;
-  color: $color-white;
 }
 
 .title {

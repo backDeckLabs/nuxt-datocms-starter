@@ -59,7 +59,8 @@ export default {
     finalLinkPath() {
       const linkPath = this.cmsLink.url || this.url;
       // TODO: setup link localization here if needed
-      return this.finalExternal ? linkPath : linkPath;
+      //return this.finalExternal ? this.localePath(linkPath) : linkPath;
+      return this.linkPath;
     },
     finalTarget() {
       return this.cmsLink.target || this.target;

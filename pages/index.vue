@@ -5,6 +5,11 @@
         DatoCms + Nuxt + Netlify
       </h1>
     </div>
+    <ul v-if="posts" class="posts-list">
+      <li v-for="post in posts" :key="`post-${post.slug}`" class="post-item">
+        <nuxt-link :to="routes.post(post.slug)">{{post.title}}</nuxt-link>
+      </li>
+    </ul>
   </article>
 </template>
 
@@ -47,19 +52,12 @@ export default {
 
 .title-container {
   width: fit-content;
-
-  /* The magic */
-  -webkit-background-clip: text;
-  color: transparent;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://media2.giphy.com/media/l2x7mzCCX7oDX2r0PD/giphy.gif);
+  color: $color-white;
 }
 
 .title {
   margin: 0;
-  max-width: 10ex;
+  max-width: 9ex;
   font-size: 20vw;
   font-weight: 600;
   line-height: 1;

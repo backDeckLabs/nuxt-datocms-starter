@@ -1,13 +1,22 @@
 <template>
   <article class="post">
-    <h1>{{post.title}}</h1>
+    <page-wrapper spacing>
+      <layout-container>
+        <base-link :url="routes.home()">Back Home</base-link>
+        <h1>{{post.title}}</h1>
+      </layout-container>
+    </page-wrapper>
   </article>
 </template>
 
 <script>
 import { request, gql } from '@/cms/datocms';
+import PageWrapper from '~/components/layout/PageWrapper';
+import LayoutContainer from '~/components/layout/LayoutContainer';
+import BaseLink from '~/components/base/BaseLink';
 
 export default {
+  components: {BaseLink, LayoutContainer, PageWrapper},
   async asyncData({ params }) {
     const data = await request({
       query: gql`

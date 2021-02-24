@@ -31,7 +31,7 @@
 
 <script>
 /**
- * Color Palette of the Oboz Footwear site.
+ * Color Palette of the site.
  */
 
 export default {

@@ -57,7 +57,7 @@ export const pageMeta = {
         return this.$store.getters.settings.page_meta_description_fallback;
       }
 
-      return "Oboz designs and builds men’s and women's hiking boots, hiking shoes, insulated footwear, sandals and more from the ground up for wherever the trail takes you.";
+      return "site descripton here";
     },
     seoImage() {
       if (this.pageData.meta_image && this.pageData.meta_image.url) {

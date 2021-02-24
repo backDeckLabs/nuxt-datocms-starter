@@ -157,7 +157,7 @@ $arrow-spacing: $spacing-100;
   align-items: center;
   justify-content: center;
   margin-left: $arrow-spacing;
-  background-color: $oboz-green-accessible;
+  background-color: $color-primary;
   border-radius: 50%;
   box-shadow: 0 2px 1rem 0 rgba($color-black, 0.25);
 

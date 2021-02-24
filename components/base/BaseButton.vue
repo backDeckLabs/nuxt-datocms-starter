@@ -131,10 +131,10 @@ $button-content-z-index: $button-hover-layer-z-index + 1;
 
   &.btn-primary,
   &.btn-action {
-    background-color: $oboz-green-accessible;
+    background-color: $color-primary;
 
     &::before {
-      background-color: darken($oboz-green-accessible, 3%);
+      background-color: darken($color-primary, 3%);
     }
 
     .btn-icon /deep/ {

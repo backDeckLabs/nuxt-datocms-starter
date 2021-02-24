@@ -58,8 +58,8 @@ export default {
     },
     finalLinkPath() {
       const linkPath = this.cmsLink.url || this.url;
-      // Only return localePath version if using localized content from nuxt-i18n module
-      return this.finalExternal ? linkPath : this.localePath(linkPath);
+      // TODO: setup link localization here if needed
+      return this.finalExternal ? linkPath : linkPath;
     },
     finalTarget() {
       return this.cmsLink.target || this.target;

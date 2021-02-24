@@ -58,11 +58,11 @@ export default {
   }
 
   a {
-    color: $oboz-green;
+    color: $color-primary;
     text-decoration: underline;
 
     &:hover {
-      color: $oboz-green-accessible;
+      color: $color-primary;
     }
   }
 }

@@ -30,6 +30,6 @@ export default {
 
 .menu-toggle,
 .tuner-toggle {
-  color: $color-white;
+  //color: $color-white;
 }
 </style>

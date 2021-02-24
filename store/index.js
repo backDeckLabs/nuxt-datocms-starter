@@ -78,7 +78,7 @@ export const actions = {
   async getSettings({commit}) {
     // TODO: Fetch settings document
     const settingsDoc = {};
-    commit('SET_SETTINGS', settingsDoc ? settingsDoc.data : {});
+    commit('SET_SETTINGS', settingsDoc ? settingsDoc : {});
   },
   handlePageError(_, obj) {
     obj.error({

@@ -60,16 +60,17 @@ export const pageMeta = {
       return "site descripton here";
     },
     seoImage() {
-      if (this.pageData.meta_image && this.pageData.meta_image.url) {
-        return this.pageData.meta_image.url;
-      } else if (this.pageData.hero_image && this.pageData.hero_image.url) {
-        return this.pageData.hero_image.url;
-      } else if (
-        this.$store.getters.settings &&
-        this.$store.getters.settings.page_meta_image_default.url
-      ) {
-        return this.$store.getters.settings.page_meta_image_default.url;
-      }
+      // TODO: implement SEO image setting here
+      // if (this.pageData.meta_image && this.pageData.meta_image.url) {
+      //   return this.pageData.meta_image.url;
+      // } else if (this.pageData.hero_image && this.pageData.hero_image.url) {
+      //   return this.pageData.hero_image.url;
+      // } else if (
+      //   this.$store.getters.settings &&
+      //   this.$store.getters.settings.page_meta_image_default.url
+      // ) {
+      //   return this.$store.getters.settings.page_meta_image_default.url;
+      // }
 
       return false;
     },

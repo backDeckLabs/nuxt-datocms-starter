@@ -183,6 +183,7 @@ main {
   width: 100%;
   z-index: $main-page-z-index;
 
+  // Masthead gradient element
   &::before {
     content: '';
     position: absolute;
@@ -191,11 +192,11 @@ main {
     left: 0;
     width: 100%;
     height: 120px;
-    background-image: linear-gradient(
-      to bottom,
-      rgba($color-black, 0.35) 1%,
-      rgba($color-black, 0)
-    );
+    //background-image: linear-gradient(
+    //  to bottom,
+    //  rgba($color-black, 0.35) 1%,
+    //  rgba($color-black, 0)
+    //);
 
     @media (min-width: $navigation-breakpoint) {
       height: 135px;

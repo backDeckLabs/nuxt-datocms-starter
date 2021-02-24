@@ -43,9 +43,8 @@ export default {
 
 <style lang="scss" scoped>
 .home-page {
-  background-color: #000;
-  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -59,17 +58,23 @@ export default {
 .title {
   margin: 0;
   max-width: 9ex;
-  font-size: 20vw;
+  font-size: 10vw;
   font-weight: 600;
   line-height: 1;
   text-align: center;
 
   @media (min-width: 900px) {
-    font-size: 200px;
+    font-size: 150px;
   }
 }
 
 .dotcom {
   display: block;
+}
+
+.posts-list {
+  @include rawList;
+
+  margin-top: $spacing-400;
 }
 </style>

@@ -1,6 +1,6 @@
 export const state = () => ({
-  companyName: 'LostTrailParkingLot.com',
-  baseUrl: 'https://losttrailparkinglot.com',
+  companyName: 'Company Name Here',
+  baseUrl: 'https://companywebsite.com',
   appId: 'app',
   trackingEnabled: true,
   isMobile: null,
@@ -75,10 +75,8 @@ export const actions = {
     const allActions = [{action: 'getSettings'}, {action: 'navigation/getFullDecoratorNav'}];
     await Promise.all(allActions.map((entry) => dispatch(entry.action, entry.args)));
   },
-  async getSettings({commit, dispatch}) {
-    // const settingsDoc = await dispatch('getSingleLocalizedDoc', {
-    //   predicateQuery: this.$prismic.predicates.at('document.type', 'settings'),
-    // });
+  async getSettings({commit}) {
+    // TODO: Fetch settings document
     const settingsDoc = {};
     commit('SET_SETTINGS', settingsDoc ? settingsDoc.data : {});
   },

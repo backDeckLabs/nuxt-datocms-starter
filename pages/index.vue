@@ -2,8 +2,7 @@
   <article class="home-page">
     <div class="title-container">
       <h1 class="title">
-        Lost Trail Parking Lot
-        <span class="dotcom">.com</span>
+        DatoCms + Nuxt + Netlify
       </h1>
     </div>
   </article>
@@ -60,10 +59,11 @@ export default {
 
 .title {
   margin: 0;
-  max-width: 8ex;
+  max-width: 10ex;
   font-size: 20vw;
   font-weight: 600;
   line-height: 1;
+  text-align: center;
 
   @media (min-width: 900px) {
     font-size: 200px;

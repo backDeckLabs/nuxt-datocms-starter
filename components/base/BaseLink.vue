@@ -23,7 +23,7 @@ export default {
       default: ''
     },
     /**
-     * Object that represents a link from a headless CMS.  Currently setup for Prismic
+     * Object that represents a link from a headless CMS.
      */
     cmsLink: {
       type: Object,

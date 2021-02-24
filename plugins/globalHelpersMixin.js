@@ -27,8 +27,8 @@ if (!Vue.__global_mixin__) {
       cmsLinkToUrl(linkObj) {
         if (linkObj) {
           return linkObj.link_type && (linkObj.url || linkObj.slug)
-            ? this.$prismic.dom.Link.url(linkObj, this.$prismic.linkResolver)
-            : this.$prismic.linkResolver(linkObj);
+            ? this.url
+            : this.url;
         }
         return '/';
       },

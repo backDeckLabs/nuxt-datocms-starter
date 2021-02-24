@@ -1,4 +1,4 @@
-const siteName = 'LostTrailParkingLot.com';
+const siteName = 'CompanyName.com';
 const desc = `At the corner of space and time.`;
 const themeColor = `#000`;
 
@@ -18,7 +18,7 @@ export default {
   target: 'static',
 
   head: {
-    titleTemplate: '%s - LostTrailParkingLot.com',
+    titleTemplate: '%s - nuxt-datocms-starter',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
